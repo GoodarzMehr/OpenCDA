@@ -1,0 +1,22 @@
+name: opencdaP310
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python==3.10
+  - pip:
+    - matplotlib
+    - networkx
+    - numpy
+    - pillow
+    - pyparsing
+    - six
+    - open3d
+    - opencv-python
+    - pandas
+    - pygame
+    - scikit-learn
+    - scipy
+    - seaborn
+    - lxml
+    - shapely

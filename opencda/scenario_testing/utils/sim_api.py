@@ -288,8 +288,7 @@ class ScenarioManager:
         """
         print('Creating single CAVs.')
         # By default, we use lincoln as our cav model.
-        default_model = 'vehicle.lincoln.mkz2017' \
-            if self.carla_version == '0.9.11' else 'vehicle.lincoln.mkz_2017'
+        default_model = 'vehicle.ford.mustang'
 
         cav_vehicle_bp = \
             self.world.get_blueprint_library().find(default_model)
@@ -365,8 +364,7 @@ class ScenarioManager:
 
         # we use lincoln as default choice since our UCLA mobility lab use the
         # same car
-        default_model = 'vehicle.lincoln.mkz2017' \
-            if self.carla_version == '0.9.11' else 'vehicle.lincoln.mkz_2017'
+        default_model = 'vehicle.ford.mustang'
 
         cav_vehicle_bp = \
             self.world.get_blueprint_library().find(default_model)
@@ -477,8 +475,7 @@ class ScenarioManager:
 
         # if not random select, we always choose lincoln.mkz with green color
         color = '0, 255, 0'
-        default_model = 'vehicle.lincoln.mkz2017' \
-            if self.carla_version == '0.9.11' else 'vehicle.lincoln.mkz_2017'
+        default_model = 'vehicle.ford.mustang'
         ego_vehicle_bp = blueprint_library.find(default_model)
 
         for i, vehicle_config in enumerate(traffic_config['vehicle_list']):
@@ -552,8 +549,7 @@ class ScenarioManager:
 
         # if not random select, we always choose lincoln.mkz with green color
         color = '0, 255, 0'
-        default_model = 'vehicle.lincoln.mkz2017' \
-            if self.carla_version == '0.9.11' else 'vehicle.lincoln.mkz_2017'
+        default_model = 'vehicle.ford.mustang'
         ego_vehicle_bp = blueprint_library.find(default_model)
 
         spawn_ranges = traffic_config['range']

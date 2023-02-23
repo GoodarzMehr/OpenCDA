@@ -1,0 +1,22 @@
+name: opencdaP38
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python==3.8
+  - pip:
+    - matplotlib
+    - networkx
+    - numpy
+    - pillow
+    - pyparsing
+    - six
+    - open3d
+    - opencv-python
+    - pandas
+    - pygame
+    - scikit-learn
+    - scipy
+    - seaborn
+    - lxml
+    - shapely

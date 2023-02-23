@@ -116,7 +116,7 @@ Now we will introduce each of them:
                                    map_helper=None,
                                    data_dump=False):
         # By default, we use lincoln as our cav model.
-        cav_vehicle_bp = self.world.get_blueprint_library().find('vehicle.lincoln.mkz2017')
+        cav_vehicle_bp = self.world.get_blueprint_library().find('vehicle.lincoln.mkz_2017')
         single_cav_list = []
         # Each entry in the list corresponds to a CAV
         for i, cav_config in enumerate(self.scenario_params['scenario']['single_cav_list']):
@@ -155,7 +155,7 @@ Now we will introduce each of them:
         # we use lincoln as default choice since our UCLA mobility lab use the
         # same car
         cav_vehicle_bp = \
-        self.world.get_blueprint_library().find('vehicle.lincoln.mkz2017')
+        self.world.get_blueprint_library().find('vehicle.lincoln.mkz_2017')
         # create platoons
         for i, platoon in enumerate(self.scenario_params['scenario']['platoon_list']):
             platoon_manager = PlatooningManager(platoon, self.cav_world)

@@ -1,0 +1,22 @@
+name: opencdaP39
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python==3.9
+  - pip:
+    - matplotlib
+    - networkx
+    - numpy
+    - pillow
+    - pyparsing
+    - six
+    - open3d
+    - opencv-python
+    - pandas
+    - pygame
+    - scikit-learn
+    - scipy
+    - seaborn
+    - lxml
+    - shapely
