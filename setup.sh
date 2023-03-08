@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 if [ -z "$CARLA_HOME" ]; then
     echo "Error: Please set \$CARLA_HOME before running this script"
     return 0
@@ -34,7 +32,6 @@ SETUP_PY=${PWD}/scripts/setup.py
 cp "$SETUP_PY"  "${CACHE}"/carla-"${CARLA_VERSION}"-py3.7-linux-x86_64/
 
 echo "Successful! Run 'pip install -e ${CACHE}/carla-${CARLA_VERSION}-py3.7-linux-x86_64' to install carla into your python package "
-conda activate opencda
 pip install -e ${CACHE}/carla-"${CARLA_VERSION}"-py3.7-linux-x86_64
 
 echo "Sucessful Setup!"
