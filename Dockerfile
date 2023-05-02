@@ -41,13 +41,13 @@
 #                       to "true" by default.
 # PERCEPTION:           whether perception components (PyTorch and YOLOv5)
 #                       should be installed, set to "true" by default.
-# SUMO:                 whether SUMO should be installed, set to "true" by
+# SUMO:                 whether SUMO should be installed, set to "false" by
 #                       default.
 # OPENCDA_FULL_INSTALL: whether OpenCDA should be fully installed and set up,
 #                       or if only the required dependencies should be
-#                       installed. In the latter OpenCDA can be mounted to the
-#                       container at runtime, enabling faster development
-#                       cycles. Set to "false" by default.
+#                       installed. In the latter case OpenCDA can be mounted
+#                       to the container at runtime, enabling faster
+#                       development cycles. Set to "false" by default.
 
 # Installation:
 #
@@ -69,8 +69,8 @@
 # -it opencda:develop /bin/bash
 #
 # Use "nvidia-smi" and "vulkaninfo --summary" to ensure your graphics card and
-# Vulkan are both available inside the container. You may need to add some or
-# all of the following when launching the container to ensure this.
+# Vulkan API are both available inside the container. You may need to add some
+# or all of the following when launching the container to make it work.
 #
 # -e SDL_VIDEODRIVER=x11
 # -e XAUTHORITY=$XAUTHORITY
@@ -85,8 +85,8 @@ ARG USER=opencda
 ARG CARLA_VERSION=0.9.12
 ARG ADDITIONAL_MAPS=true
 ARG PERCEPTION=true
-ARG SUMO=true
-ARG OPENCDA_FULL_INSTALL=true
+ARG SUMO=false
+ARG OPENCDA_FULL_INSTALL=false
 
 ENV TZ=America/New_York
 ENV DEBIAN_FRONTEND=noninteractive
